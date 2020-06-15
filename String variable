@@ -1,0 +1,8 @@
+class Main{
+    public static void  main(String args[])
+    {        
+        String name;//S of String should be capital
+        name="jyoti";
+        System.out.println(name);
+    }
+}
