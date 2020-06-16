@@ -1,0 +1,14 @@
+class Main{
+    public static void main(String args[])
+    {
+
+   int batteryPercentage=70;
+   if(batteryPercentage<=15)
+   {
+       System.out.println("battery is low ");
+   }else
+   {
+       System.out.println("battery color orange ");
+   }
+    }
+}
