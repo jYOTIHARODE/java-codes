@@ -1,0 +1,7 @@
+public class Main{  
+public static void main(String args[]){  
+short a=10;  
+short b=10;  
+a=(short)(a+b);//20 which is int now converted to short .If we do not convert it then it gives an error 
+System.out.println(a);  
+}}
