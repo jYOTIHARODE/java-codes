@@ -1,0 +1,28 @@
+/* 
+ 	Write a program in java to create and initialize three  2D points p1, p2, and p3, and compute the area of the 
+	triangle with p1, p2, and p3 as vertices. 
+*/
+
+class Points
+{
+    public
+    int x;
+    int y;
+   
+    Points(int x,int y)
+    {
+        this . x = x;
+        this . y = y;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Points p1 = new Points(13,34);
+	    Points p2 = new Points(22,21);
+	    Points p3 = new Points(11,19);
+	    
+	   double  Area_of_triangle = ( (p1.x * (p2.y -p3.y)) + (p2.x * (p3.y -p1.y)) + (p3.x * (p1.y - p2.y)))/2 ;
+        System.out.println("Area_of_triangle = "+Math.abs(Area_of_triangle));
+	}
+}
