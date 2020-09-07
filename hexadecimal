@@ -1,0 +1,23 @@
+/*Write a program in java to initialize an integer variable ‘n’ and print the hexadecimal
+equivalent of the 3rd most significant bytes of binary representation of ‘n’.*/
+
+
+public class prog4 {
+     public static void main(String[] args)
+    {
+        int n=6578;
+        int count=0,res;
+        for(int i=32;i>=0;i--)
+        {
+            if((n&1<<(i-1))!=0)
+            {  count++;
+               if(count==3)
+               {
+                   res=(int) Math.pow(2,i-1);
+                 System.out.print(Integer.toHexString(res));
+                break;
+               }
+            }
+        }
+    }
+}
