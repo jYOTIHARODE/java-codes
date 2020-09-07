@@ -1,0 +1,17 @@
+/*Write a program in java to create and initialize two variables ‘height’ and ‘weight’
+and compute the body mass index from it
+*/
+import java.util.*;
+public class Main
+{
+   public static void main(String args[]) 
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Input weight in kilogram: ");
+      double weight = sc.nextDouble();
+      System.out.print("\nInput height in meters: ");
+      double height = sc.nextDouble();
+      double BMI = 703*weight / (height * height);
+      System.out.print("\nThe Body Mass Index (BMI) is " + BMI + " kg/m2");
+   }
+}
