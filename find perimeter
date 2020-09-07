@@ -1,0 +1,14 @@
+/*Write a program in java to create and initialize base and height of a triangle and
+compute its perimeter/*
+
+import java.util.*;
+public class Main{
+
+    public static void main(String[] args) {
+         double base = 6;
+         double height = 8;
+            double per=Math.sqrt(base*base+height*height);
+        double perimeter = (height + base + per);
+		System.out.printf("%.2f \n",  perimeter);
+    }
+}
