@@ -1,0 +1,23 @@
+/*Write a program in java to initialize an integer value n and compute 2048n ,
+(1/912)n using shift operator.*/
+
+package day_1_07_sept;
+
+import java.util.Scanner;
+
+public class Operator {
+
+   
+    public static void main(String[] args) 
+{
+        
+        Scanner input=new Scanner(System.in);
+        int n= input.nextInt();
+        int ls=n<<11;
+        float rs=n>>9;
+        
+        System.out.println("2048*n:"+ls+" n/512:"+rs);
+    
+    }
+    
+}
