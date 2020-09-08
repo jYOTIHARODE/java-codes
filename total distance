@@ -1,0 +1,22 @@
+/* 
+Given acceleration, intial velocity, and initial distance displacement at t=0 of a
+        physical object, write a java program to find the total distance displaced at some
+        time t1.
+*/
+import java.util.Scanner;
+public class Total_distance {
+      public static void main(String[] args) {
+            Scanner ob = new Scanner(System.in);
+            System.out.print("Enter acceleration : ");
+            int acc = ob.nextInt();
+
+            System.out.print("Enter  intial_velocity: ");
+            int vel = ob.nextInt();
+
+            System.out.print("Enter time: ");
+            int t1 = ob.nextInt();
+
+            int TDD=vel*t1+(acc*t1*t1)/2;
+            System.out.print(" Total_distance_displaced: "+TDD);
+        }
+    }
