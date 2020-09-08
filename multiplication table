@@ -1,0 +1,32 @@
+
+/*
+ Write a java program to apply mod operation for each entry and display
+multiplication table of modulo 16. The example for multiplication table modulo 4 is
+given below:
+X 0 1 2 3
+0 0 0 0 0
+1 0 1 2 3
+2 0 2 0 2
+3 0 3 2 1
+*/
+
+
+public class assignment{
+    public static void main(String[] args)
+    {
+        int i,j;
+        int[][] arr= new int[16][16];
+        
+        for(i=0; i<16; i++)
+            for(j=0; j<16; j++)
+                arr[i][j]=(i*j)%16;
+                
+        for(i=0; i<16; i++)
+        {
+            for(j=0; j<16; j++)
+                System.out.print(arr[i][j]+" ");
+            System.out.println(" ");
+        }
+         
+    }
+}
