@@ -1,0 +1,26 @@
+/*
+
+4) Write a program in java to input an integer n and approximate the value of
+e using formula e = 1+ 1/1! +1/2! ... + 1/n!
+
+*/
+
+import java.util.Scanner;
+class Exponential
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\nEnter the number :  ");
+		int n = sc.nextInt();
+		int i,j;
+		float e = 1, n_fact = 1;
+		for (i = 1; i <= n ; i++)
+  		{
+    			for (j = 1; j <= i; j++)
+     		 		n_fact *= j;
+    			e += (1 / n_fact);
+  		}	
+	System.out.println("The value of 'e' is : " + e);
+	}
+}
