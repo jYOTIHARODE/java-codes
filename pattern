@@ -1,0 +1,35 @@
+/*
+
+7) Write a program in java to input a variable of byte type n and display the 
+following (for n=5)
+
+5
+* *
+3 4 5
+* * * *
+1 2 3 4 5
+
+*/
+
+import java.util.Scanner;
+class Pattern
+{
+	public static void main(String args[])
+	{
+		Scanner scan = new Scanner(System.in);
+        	System.out.print("Enter any Number : ");
+		int n = scan.nextInt();
+		int i,j;
+		for(i=n;i>0;i--)
+		{
+			for(j=i;j<=n;j++)
+			{
+				if(i%2!=0)	
+					System.out.print(j +" ");
+				else
+					System.out.print("* ");
+			}
+			System.out.println();	
+		}
+     	}
+}
