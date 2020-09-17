@@ -1,0 +1,31 @@
+/*
+
+ Write a program to input center and radius of a circle with an arbitrary 
+point and print whether the point is inside, outside, or on the boundary of 
+the circle.
+
+*/
+
+import java.util.Scanner;
+class Circle
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\nEnter the center point of Circle  : ");
+		int center_x = sc.nextInt();
+		int center_y = sc.nextInt(); 	
+		System.out.println("\nEnter the Radius of Circle  : ");
+		int r = sc.nextInt();
+		System.out.println("\nEnter the arbitrary points  : ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		int d = r*r - ((center_x-x)*(center_x-x) + (center_y-y)*(center_y-y));
+		if(d>0)
+			System.out.println("inside");
+		else if(d==0)
+  			System.out.println("on the circumference");
+		else
+  			System.out.println("outside"); 
+	}
+}
