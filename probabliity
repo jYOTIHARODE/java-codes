@@ -1,0 +1,39 @@
+/*
+	Name 	JYOTI HARODE
+	Roll No	2019PGCACA14
+
+3) Input an array of flipped coin output events of arbitrary lenghth and print the
+probability of head and tail in the next flip of coin. (The coin is unbiased)
+
+*/
+
+import java.util.Scanner;
+class Probability 
+{ 
+    	public static void main(String[] args)
+    	{
+      		Scanner s= new Scanner(System.in);
+      		System.out.print("\nEnter size of array : ");
+       		int n=s.nextInt();
+		int head=0,tail=0;
+       		float probibility;
+      		System.out.print("\nEnter the outcomes : ");
+		char str[] = new char[n];
+       		for(int i=0;i<n;i++)
+       		{
+        		str[i] = s.next().charAt(0);
+         		if(str[i]=='h')
+            			head+=1;
+         		else
+            			tail+=1;
+       		}
+       		System.out.print("\nEnter your choice of H/T of probibility : ");
+       		char choice;
+       		choice=s.next().charAt(0);
+        	if(choice=='h')
+            		probibility = (float)head/n;
+        	else
+             		probibility = (float)tail/n;
+        	System.out.println("\nProbibility ="+probibility);
+    	}
+ } 
