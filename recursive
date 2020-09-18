@@ -1,0 +1,26 @@
+/*
+
+5A) Write a program in java to input two integers a and b and compute gcd(a,b) 
+using both recursive and non-recursive method.
+
+*/
+import java.util.Scanner;
+class GCD_recursive
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\nEnter the integers a and b :  ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int gcd = gcd(a,b);
+		System.out.println("\nGCD of "+a+" and "+b+" is " +gcd);
+	}
+	public static int gcd(int a, int b)
+    	{
+        	if (b != 0)
+            		return gcd(b, a % b);
+        	else
+            		return a;
+    }
+}
